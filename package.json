@@ -2,9 +2,9 @@
   "name": "restaurant-page",
   "version": "1.0.0",
   "description": "Practicing DOM manipulation by dynamically rendering a simple restaurant homepage using JavaScript alone to generate the entire contents of the website.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/mohammedalgamal/restaurant-page/issues"
   },
-  "homepage": "https://github.com/mohammedalgamal/restaurant-page#readme"
+  "homepage": "https://github.com/mohammedalgamal/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
 }
