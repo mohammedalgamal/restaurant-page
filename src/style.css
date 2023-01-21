@@ -3,8 +3,45 @@
   src: url("./nameFont.otf") format("otf");
   font-style: normal;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("./main-img.jpg");
   background-attachment: fixed;
   background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body .footer {
+  width: 100vw;
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.378);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+body .footer .text {
+  color: white;
+  font-size: calc(0.8vw + 0.8vh);
+}
+@media (max-width: 333px) {
+  body .footer .text {
+    font-size: 15px;
+  }
+}
+body .footer .text a img {
+  height: calc(0.9vw + 0.9vh);
+  margin-bottom: 5px;
+  margin-left: 8px;
+  width: auto;
+}
+body .footer .text a img:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */
