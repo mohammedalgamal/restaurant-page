@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'nameFont';
-    src: url("./nameFont.otf") format("otf");
+    src: url("./LoftygoalsRegular-9Y5Xy.otf");
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -19,10 +20,33 @@ body {
     display: flex;
     flex-direction: column;
 
+    .header {
+      width: 100vw;
+      height: 20vh;
+      background-color: rgba(0, 0, 0, 0.75);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+
+      .upper {
+        color: white;
+        font-family: 'nameFont';
+        font-size: calc(2vw + 2vh);
+      }
+
+      .lower {
+        .btn {
+          color: white;
+        }
+      }
+    }
+
     .footer {
       width: 100vw;
       height: 5vh;
-      background-color: rgba(0, 0, 0, 0.378);
+      background-color: rgba(0, 0, 0, 0.75);
       display: flex;
       align-items: center;
       justify-content: center;
