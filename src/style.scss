@@ -29,6 +29,7 @@ body {
       align-items: center;
       justify-content: center;
       gap: 10px;
+      margin-bottom: 5vh;
 
       .upper {
         color: white;
@@ -47,6 +48,8 @@ body {
           font-weight: 300;
           padding: 15px;
           transition: transform 0.3s;
+          background-color: transparent;
+          border-bottom: 2px solid transparent;
           border-radius: 0;
         }
 
@@ -54,10 +57,17 @@ body {
           transform: translateY(-10%);
         }
 
-        .btn:active {
+        .active {
           border-bottom: 2px solid white;
         }
       }
+    }
+
+    .content {
+      margin: auto;
+      width: 34vw;
+      height: 50vh;
+      background-color: rgba(0, 0, 0, 0.75);
     }
 
     .footer {
@@ -67,9 +77,9 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: auto;
+      margin-top: 5vh;
 
-
+      
       .text {
           color: white;
           font-size: calc(0.8vw + 0.8vh);

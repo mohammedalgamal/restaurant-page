@@ -14,7 +14,7 @@ const headerLower = document.createElement("div");
 headerLower.className = "lower";
 
 const homeBtn = document.createElement("button");
-homeBtn.classList = "home-btn btn";
+homeBtn.classList = "home-btn btn active";
 homeBtn.innerHTML = "Home";
 
 const menuBtn = document.createElement("button");
