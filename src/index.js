@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./style.css";
 import gitHubImg from "./GitHub-Mark-Light-32px.png";
+import makeHomeDiv from "./home";
 
 // Add header and its content
 const header = document.createElement("div");
@@ -35,6 +36,7 @@ document.body.appendChild(header);
 // Add main section 'content' and its content
 const content = document.createElement("div");
 content.className = "content";
+makeHomeDiv(content);
 document.body.appendChild(content);
 
 // Add footer and its content
