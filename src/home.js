@@ -1,6 +1,9 @@
-import homeImg from "./food.jpg";
+import homeImg from "./food.png";
 
 export default function makeHomeDiv(element) {
+    // eslint-disable-next-line no-param-reassign
+    element.innerHTML = "";
+
     const homeDiv = document.createElement("div");
     homeDiv.classList = "home";
 

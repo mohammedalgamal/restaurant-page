@@ -58,14 +58,14 @@ body .header .lower .active {
 body .content {
   margin: auto;
   width: 34vw;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
 }
 body .content .home img {
-  width: 20vw;
+  width: 15vw;
   height: auto;
   border-radius: 500px;
 }

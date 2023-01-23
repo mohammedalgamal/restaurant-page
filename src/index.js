@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./style.css";
 import gitHubImg from "./GitHub-Mark-Light-32px.png";
 import makeHomeDiv from "./home";
+import makeMenuDiv from "./menu";
+import makeContactDiv from "./contact";
 
 // Add header and its content
 const header = document.createElement("div");
@@ -33,10 +35,36 @@ headerLower.appendChild(contactBtn);
 header.appendChild(headerLower);
 document.body.appendChild(header);
 
+// Change active button upon click
+function changeActiveBtn(currentActive) {
+    homeBtn.classList.remove("active");
+    menuBtn.classList.remove("active");
+    contactBtn.classList.remove("active");
+
+    currentActive.classList.add("active");
+};
+
 // Add main section 'content' and its content
 const content = document.createElement("div");
 content.className = "content";
+
 makeHomeDiv(content);
+
+homeBtn.addEventListener("click", () => {
+    changeActiveBtn(homeBtn);
+    makeHomeDiv(content);
+});
+
+menuBtn.addEventListener("click", () => {
+    changeActiveBtn(menuBtn);
+    makeMenuDiv(content);
+});
+
+contactBtn.addEventListener("click", () => {
+    changeActiveBtn(contactBtn);
+    makeContactDiv(content);
+});
+
 document.body.appendChild(content);
 
 // Add footer and its content
@@ -58,3 +86,7 @@ footerImgLink.appendChild(footerImg);
 footerText.appendChild(footerImgLink);
 footer.appendChild(footerText);
 document.body.appendChild(footer);
+
+
+
+
