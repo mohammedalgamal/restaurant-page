@@ -83,6 +83,16 @@ body .content {
   background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid rgba(128, 128, 128, 0.395);
 }
+@media (max-width: 1100px) {
+  body .content {
+    width: 50vw;
+  }
+}
+@media (max-width: 800px) {
+  body .content {
+    width: 66vw;
+  }
+}
 body .content .home,
 body .content .menu,
 body .content .contact {
@@ -125,16 +135,16 @@ body .content .menu .item {
   color: white;
 }
 body .content .menu .item img {
-  width: 12rem;
+  width: calc(7vw + 7vh);
   height: auto;
   border-radius: 12px;
   border: 1px solid rgba(128, 128, 128, 0.342);
 }
 body .content .menu .item .title {
-  font-size: 2rem;
+  font-size: calc(1.1vw + 1.1vh);
 }
 body .content .menu .item .description {
-  width: 16rem;
+  width: calc(8vw + 8vh);
   font-weight: 250;
 }
 body .content .contact {

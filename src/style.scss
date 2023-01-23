@@ -80,6 +80,14 @@ body {
       background-color: rgba(0, 0, 0, 0.8);
       border: 1px solid rgba(128, 128, 128, 0.395);
 
+      @media (max-width: 1100px) {
+        width: 50vw;
+      }
+
+      @media (max-width: 800px) {
+        width: 66vw;
+      }
+
       .home,
       .menu,
       .contact {
@@ -125,18 +133,18 @@ body {
           color: white;
 
           img {
-            width: 12rem;
+            width: calc(7vw + 7vh);
             height: auto;
             border-radius: 12px;
             border: 1px solid rgba(128, 128, 128, 0.342);
           }
 
           .title {
-            font-size: 2rem;
+            font-size: calc(1.1vw + 1.1vh);
           }
 
           .description {
-            width: 16rem;
+            width: calc(8vw + 8vh);
             font-weight: 250;
           }
         }
