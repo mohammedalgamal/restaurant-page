@@ -37,12 +37,12 @@ document.body.appendChild(header);
 
 // Change active button upon click
 function changeActiveBtn(currentActive) {
-    homeBtn.classList.remove("active");
-    menuBtn.classList.remove("active");
-    contactBtn.classList.remove("active");
+  homeBtn.classList.remove("active");
+  menuBtn.classList.remove("active");
+  contactBtn.classList.remove("active");
 
-    currentActive.classList.add("active");
-};
+  currentActive.classList.add("active");
+}
 
 // Add main section 'content' and its content
 const content = document.createElement("div");
@@ -51,18 +51,18 @@ content.className = "content";
 makeHomeDiv(content);
 
 homeBtn.addEventListener("click", () => {
-    changeActiveBtn(homeBtn);
-    makeHomeDiv(content);
+  changeActiveBtn(homeBtn);
+  makeHomeDiv(content);
 });
 
 menuBtn.addEventListener("click", () => {
-    changeActiveBtn(menuBtn);
-    makeMenuDiv(content);
+  changeActiveBtn(menuBtn);
+  makeMenuDiv(content);
 });
 
 contactBtn.addEventListener("click", () => {
-    changeActiveBtn(contactBtn);
-    makeContactDiv(content);
+  changeActiveBtn(contactBtn);
+  makeContactDiv(content);
 });
 
 document.body.appendChild(content);
@@ -86,7 +86,3 @@ footerImgLink.appendChild(footerImg);
 footerText.appendChild(footerImgLink);
 footer.appendChild(footerText);
 document.body.appendChild(footer);
-
-
-
-
